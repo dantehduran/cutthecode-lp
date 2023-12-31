@@ -6,6 +6,7 @@
     <HeaderNav />
     <main class="z-0 relative bg-background">
       <HeaderHero />
+      <ServicesContainer />
     </main>
   </div>
 </template>

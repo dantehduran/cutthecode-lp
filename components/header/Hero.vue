@@ -4,7 +4,7 @@
       <div
         class="bg-muted relative overflow-hidden rounded-t-3xl rounded-bl-3xl"
       >
-        <div class="px-8 md:w-full md:px-16">
+        <div class="px-8 md:w-full md:px-16 pb-2 sm:pb-20">
           <div class="mx-auto w-full max-w-[96rem]">
             <div class="px-6 md:px-8 pt-28 md:pt-36 flex flex-col gap-4">
               <div class="flex gap-4 justify-start items-center">
