@@ -3,7 +3,7 @@
     class="z-10 bg-transparent fixed top-10 md:top-14 left-0 right-0 bottom-auto block"
   >
     <div
-      class="z-50 pl-9 pr-8 md:pl-14 md:pr-20 h-20 md:h-24 w-full border-b-transparent border-b-[0.8px] border-solid flex justify-center items-center relative"
+      class="z-50 pl-9 pr-8 md:pl-14 md:pr-14 h-20 md:h-24 w-full border-b-transparent border-b-[0.8px] border-solid flex justify-center items-center relative"
     >
       <div class="relative flex justify-between items-center w-full z-20">
         <NuxtLink to="/">

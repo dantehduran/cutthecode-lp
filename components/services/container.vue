@@ -24,14 +24,39 @@
           />
         </div>
         <div class="py-24">
-          <div class="w-3/5 max-w-2xl">
+          <div class="w-3/5 max-w-2xl mb-6">
             <h3 class="text-5xl">
               We create without the need for coding to give ambitious brands the
               upper hand
             </h3>
+          </div>
+          <div class="w-full flex gap-8 justify-between">
+            <ServicesCard v-for="service in services" v-bind="service" />
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
+<script setup lang="ts">
+const services = [
+  {
+    title: "design",
+    description:
+      "Creating brand-driven experiences that put brand essence at the core of the creation process.",
+    icon: "icon-design.svg",
+  },
+  {
+    title: "build",
+    description:
+      "Crafting custom digital products like websites and platforms that brand teams can manage themselves.",
+    icon: "icon-build.svg",
+  },
+  {
+    title: "automate",
+    description:
+      "Leveraging tools and platforms to build efficiently, shorten time frames and drive progress.",
+    icon: "icon-automate.svg",
+  },
+];
+</script>
