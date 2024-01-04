@@ -1,6 +1,6 @@
 <template>
   <div
-    class="leading-relaxed md:leading-none antialiased bg-background font-sans min-h-full dark mt-2"
+    class="tracking-wider md:tracking-normal antialiased bg-background font-sans min-h-full dark mt-2"
   >
     <HeaderNotification />
     <HeaderNav />
