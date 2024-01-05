@@ -31,7 +31,16 @@
             </h3>
           </div>
           <div class="w-full flex gap-8 justify-between">
-            <ServicesCard v-for="service in services" v-bind="service" />
+            <ServicesCard
+              v-for="(service, index) in services"
+              :key="index"
+              v-bind="service"
+              @mouseover="hover(index)"
+              @mouseout="unhover"
+              :class="{
+                'opacity-20': hoveredIndex !== null && hoveredIndex !== index,
+              }"
+            />
           </div>
         </div>
       </div>
@@ -39,6 +48,16 @@
   </section>
 </template>
 <script setup lang="ts">
+import { ref } from "vue";
+let hoveredIndex = ref<null | number>(null);
+
+const hover = (index: number) => {
+  hoveredIndex.value = index;
+};
+
+const unhover = () => {
+  hoveredIndex.value = null;
+};
 const services = [
   {
     title: "design",

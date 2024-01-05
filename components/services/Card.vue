@@ -1,6 +1,6 @@
 <template>
   <div
-    class="group relative rounded-2xl w-full pr-6 py-8 pl-8 border-r border-r-primary/30"
+    class="group relative rounded-2xl w-full pr-6 py-8 pl-8 border-r border-r-primary/30 cursor-pointer transition-opacity duration-500 ease-in-out"
   >
     <div
       class="absolute w-full h-full inset-0 rounded-2xl bg-gradient-to-tl from-primary/20 opacity-0 group-hover:opacity-20"
