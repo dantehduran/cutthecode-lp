@@ -4,7 +4,7 @@
       <div
         class="w-2/5 h-full absolute top-0 right-0 rounded-b-2xl bg-muted z-40"
       >
-        <Curve class="text-muted top-0 -left-4 rotate-90" />
+        <Curve class="text-muted top-0 -left-3.5 rotate-90" />
       </div>
     </div>
     <div class="w-full px-16">
@@ -17,11 +17,9 @@
             <h4 class="font-bold">Services</h4>
           </div>
           <Curve
-            class="text-background absolute bottom-0 -right-4 -rotate-90"
+            class="text-background absolute bottom-2 -right-4 -rotate-90"
           />
-          <Curve
-            class="text-background absolute bottom-0 -left-3.5 rotate-180"
-          />
+          <Curve class="text-background absolute bottom-2 -left-4 rotate-180" />
         </div>
         <div class="py-24">
           <div class="w-3/5 max-w-2xl mb-6">
