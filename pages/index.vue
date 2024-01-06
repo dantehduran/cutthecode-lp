@@ -1,12 +1,13 @@
 <template>
   <div
-    class="tracking-wider md:tracking-normal antialiased bg-background font-sans min-h-full dark mt-2"
+    class="tracking-wider md:tracking-normal antialiased bg-background text-foreground font-sans min-h-full dark mt-2"
   >
     <HeaderNotification />
     <HeaderNav />
     <main class="z-0 relative bg-background">
       <HeaderHero />
       <ServicesContainer />
+      <VisionContainer />
     </main>
   </div>
 </template>
