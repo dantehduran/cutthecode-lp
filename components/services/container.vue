@@ -38,7 +38,7 @@
               @mouseover="hover(index)"
               @mouseout="unhover"
               :class="{
-                'opacity-20': hoveredIndex !== null && hoveredIndex !== index,
+                'opacity-40': hoveredIndex !== null && hoveredIndex !== index,
               }"
             />
           </div>
