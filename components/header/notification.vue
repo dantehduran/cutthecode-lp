@@ -1,5 +1,14 @@
 <script setup lang="ts">
 import { Button } from "../ui/button";
+const items = [
+  { title: "Reducations", desc: "A platform for the education of the future" },
+  {
+    title: "Samsung x Skybox",
+    desc: "Next-level inspiration platform for Gen Z",
+  },
+  { title: "SelektHuis", desc: "  Growth-driven platform for a market leader" },
+  { title: "Jay-Jay Boske", desc: "Personal branding experience" },
+];
 </script>
 
 <template>
@@ -21,27 +30,21 @@ import { Button } from "../ui/button";
         <div
           class="w-10 md:w-28 z-10 h-full absolute inset-y-0 right-0 bg-gradient-to-l from-background"
         ></div>
-        <div class="whitespace-nowrap telepromt flex w-full gap-8">
-          <div class="flex gap-2">
-            <div class="opacity-80">primer anuncio</div>
-            <div class="opacity-40">description 1 ...</div>
-          </div>
-          <div class="flex gap-2">
-            <div class="opacity-80">segundo anuncio</div>
-            <div class="opacity-40">description 2 ...</div>
-          </div>
-          <div class="flex gap-2">
-            <div class="opacity-80">tercer anuncio</div>
-            <div class="opacity-40">description 3 ...</div>
-          </div>
-          <div class="flex gap-2">
-            <div class="opacity-80">cuarto anuncio</div>
-            <div class="opacity-40">description 4 ...</div>
+        <div class="whitespace-nowrap telepromt flex max-w-fit gap-8">
+          <div
+            v-for="(item, index) in [...items, ...items]"
+            :key="index"
+            class="flex gap-2"
+          >
+            <div class="opacity-80">{{ item.title }}</div>
+            <div class="opacity-40">
+              {{ item.desc }}
+            </div>
           </div>
         </div>
       </div>
       <div class="ml-0 md:ml-4 flex items-center bg-scroll w-12 min-w-[3rem]">
-        <!--FIX: border color and gh color-->
+        <!--TODO: border color and gh color-->
         <Button variant="outline" class="rounded-full">EN</Button>
       </div>
     </div>
@@ -50,11 +53,8 @@ import { Button } from "../ui/button";
 
 <style>
 @keyframes text-scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
+  to {
+    transform: translateX(calc(-50% - 1rem));
   }
 }
 .telepromt {
