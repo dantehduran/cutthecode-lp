@@ -1,13 +1,18 @@
 <template>
   <nav
-    class="z-10 bg-transparent fixed top-10 md:top-14 left-0 right-0 bottom-auto block"
+    class="z-10 bg-transparent fixed left-0 right-0 bottom-auto block transition-all transform duration-200 ease-in"
+    :class="{ 'top-10 md:top-14': !hasScroll, 'top-0 md:top-0': hasScroll }"
+    @scroll="handleScroll"
   >
     <div
       class="z-50 pl-9 pr-8 md:pl-14 md:pr-14 h-20 md:h-24 w-full border-b-transparent border-b-[0.8px] border-solid flex justify-center items-center relative"
     >
       <div class="relative flex justify-between items-center w-full z-20">
         <NuxtLink to="/">
-          <div class="w-9 md:w-12 flex text-primary">
+          <div
+            class="w-9 md:w-12 flex text-primary transform duration-200 ease-in"
+            :class="{ 'scale-75': hasScroll }"
+          >
             <svg
               width="100%"
               viewBox="0 0 52 53"
@@ -24,7 +29,7 @@
         <!-- <div -->
         <!--   class="w-28 h-8 pt-8 pl-4 pr-4 flex overflow-hidden z-50 md:h-auto flex-col gap-0 rounded-2xl md:px-6 md:pt-10 pb-4 absolute top-0 bottom-auto left-auto -right-6" -->
         <!-- > -->
-        <HeaderLinks />
+        <HeaderLinks :hasScroll="hasScroll" />
         <!-- </div> -->
       </div>
       <!--TODO:overlay-->
@@ -32,3 +37,20 @@
     </div>
   </nav>
 </template>
+<script setup lang="ts">
+import { ref, onMounted, onBeforeUnmount } from "vue";
+
+const hasScroll = ref(false);
+
+const handleScroll = () => {
+  hasScroll.value = window.scrollY > 130;
+};
+
+onMounted(() => {
+  window.addEventListener("scroll", handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener("scroll", handleScroll);
+});
+</script>

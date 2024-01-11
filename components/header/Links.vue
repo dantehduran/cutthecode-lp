@@ -1,7 +1,10 @@
 <template>
   <div class="flex justify-end">
     <!--group button-->
-    <div class="flex gap-4 justify-center items-center">
+    <div
+      class="flex gap-4 justify-center items-center"
+      v-show="!props.hasScroll"
+    >
       <button
         v-for="(link, index) in links"
         :key="index"
@@ -16,6 +19,7 @@
   </div>
 </template>
 <script setup lang="ts">
+const props = defineProps({ hasScroll: Boolean });
 const links = [
   { name: "no-code", to: "/" },
   { name: "projects", to: "/projects" },
