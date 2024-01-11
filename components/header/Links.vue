@@ -16,9 +16,14 @@
         <span class="capitalize">{{ link.name }}</span>
       </button>
     </div>
+    <Button v-show="props.hasScroll" class="rounded-full" variant="outline">
+      <Dot class="mr-2 h-2 w-2" />
+      <span class="font-semibold">Menu</span>
+    </Button>
   </div>
 </template>
 <script setup lang="ts">
+import { Button } from "../ui/button";
 const props = defineProps({ hasScroll: Boolean });
 const links = [
   { name: "no-code", to: "/" },
