@@ -8,6 +8,7 @@
       <HeaderHero />
       <ServicesContainer />
       <VisionContainer />
+      <ProjectsContainer />
     </main>
   </div>
 </template>
