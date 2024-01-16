@@ -4,13 +4,14 @@
       class="bg-muted text-muted-foreground rounded-t-3xl rounded-bl-2xl relative pt-24 pb-12"
     >
       <div
-        class="flex gap-3 w-full overflow-hidden whitespace-nowrap px-16"
+        class="flex gap-3 w-full overflow-x-hidden whitespace-nowrap px-16 scroll-smooth snap-x snap-mandatory scroll-pl-16"
         ref="scrollRef"
       >
         <ProjectsCard
           v-for="(item, index) in data"
           :key="index"
           v-bind="item"
+          class="snap-start snap-always"
         />
       </div>
     </div>
@@ -71,11 +72,11 @@ const scrollRef = ref<HTMLElement | null>(null);
 let scrollContainer: HTMLElement;
 
 const scrollLeft = () => {
-  scrollContainer.scrollLeft -= 100;
+  scrollContainer.scrollLeft -= 320;
 };
 
 const scrollRight = () => {
-  scrollContainer.scrollLeft += 100;
+  scrollContainer.scrollLeft += 320;
 };
 
 onMounted(() => {
