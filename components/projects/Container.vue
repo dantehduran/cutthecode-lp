@@ -4,7 +4,7 @@
       class="bg-muted text-muted-foreground rounded-t-3xl rounded-bl-2xl relative pt-24 pb-12"
     >
       <div
-        class="flex gap-3 w-full overflow-x-hidden whitespace-nowrap px-16 scroll-smooth snap-x snap-mandatory scroll-pl-16"
+        class="flex gap-4 w-full overflow-x-hidden whitespace-nowrap px-16 scroll-smooth snap-x snap-mandatory scroll-pl-16"
         ref="scrollRef"
       >
         <ProjectsCard
@@ -91,66 +91,88 @@ const data = [
     client: "reducations",
     desc: "A new era of education at the Dutch Creative Technology Academy",
     case: true,
+    tools: ["figma", "webflow", "airtable", "lottie", "weglot"],
+    buildTime: "3 weeks",
   },
   {
     img: "/projects/skybox.webp",
     client: "skybox x samsung",
     desc: "Let's inspire the future with a free online academy",
     case: false,
+    tools: ["airtable", "lottie", "weglot"],
+    buildTime: "2 months",
   },
   {
     img: "/projects/vita.webp",
     client: "vacatura vita",
     desc: "Building the world’s most advanced no-code job platform",
     case: true,
+    tools: ["figma", "airtable", "lottie", "weglot"],
+    buildTime: "4 weeks",
   },
   {
     img: "/projects/snack.webp",
     client: "snack with benefits",
     desc: "A plant-based experience that looks as good as it tastes ",
     case: true,
+    tools: ["figma", "webflow", "weglot"],
+    buildTime: "3 weeks",
   },
   {
     img: "/projects/agency.webp",
     client: "for you agency",
     desc: "reaching the next gen like no other",
     case: false,
+    tools: ["lottie", "weglot"],
+    buildTime: "4 weeks",
   },
   {
     img: "/projects/caya.webp",
     client: "caya",
     desc: "taking document management international in just 2 weeks",
     case: true,
+    tools: ["figma", "airtable", "lottie", "weglot"],
+    buildTime: "1 month",
   },
   {
     img: "/projects/avocado.webp",
     client: "the avocado show",
     desc: "a new scalable, digital footprint for the avocado show",
     case: false,
+    tools: ["figma", "weglot"],
+    buildTime: "5 weeks",
   },
   {
     img: "/projects/skybox2.webp",
     client: "skybox",
     desc: "in just one month from scratch to a creative platform",
     case: true,
+    tools: ["figma", "webflow", "airtable", "lottie", "weglot"],
+    buildTime: "3 weeks",
   },
   {
     img: "/projects/move.webp",
     client: "move agency",
     desc: "a digital experience for the largest mobile agency of the netherlands",
     case: false,
+    tools: ["lottie", "weglot"],
+    buildTime: "7 weeks",
   },
   {
     img: "/projects/springplank.webp",
     client: "springplank",
     desc: "a landingpage for the youngest generation of hard workers",
     case: false,
+    tools: ["figma", "weglot"],
+    buildTime: "3 moths",
   },
   {
     img: "/projects/oneup.webp",
     client: "oneUp",
     desc: "a outspoken design to reflect the disruptive character",
     case: false,
+    tools: ["figma", "lottie", "weglot"],
+    buildTime: "5 weeks",
   },
 ];
 </script>
