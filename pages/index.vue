@@ -9,6 +9,7 @@
       <ServicesContainer />
       <VisionContainer />
       <ProjectsContainer />
+      <FooterContainer />
     </main>
   </div>
 </template>
