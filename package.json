@@ -12,6 +12,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.10.1",
+    "@tailwindcss/forms": "^0.5.7",
     "nuxt": "^3.8.2",
     "shadcn-nuxt": "^0.1.0",
     "typescript": "^5.3.3",
